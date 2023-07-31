@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import TrainItem from './TrainItem';
@@ -8,9 +7,11 @@ import { useNavigate } from 'react-router-dom';
 
 const API = 'http://20.244.56.144:80/';
 
+
 const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
+
 const TrainSchedule = () => {
   const [trains, setTrains] = useState([]);
 const [error,setError]= useState([]);

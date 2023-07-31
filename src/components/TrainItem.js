@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, CardContent, Typography } from '@mui/material';
 
+
 const TrainItem = ({ train }) => {
   const { name, departureTime, seats, prices } = train;
 
