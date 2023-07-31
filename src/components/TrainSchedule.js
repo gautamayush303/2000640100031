@@ -13,7 +13,7 @@ const getRandomInt = (min, max) => {
 };
 
 const TrainSchedule = () => {
-  const [trains, setTrains] = useState([]);
+const [trains, setTrains] = useState([]);
 const [error,setError]= useState([]);
 const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ useEffect(() => {
   // Function to fetch train data from the API
   const fetchTrainData = async (token) => {
     try {
-      const response = await axios.get(`${API}`, {
+      const response = await axios.get(`${API}/train/trains`, {
         headers: {
           Authorization: `Bearer ${token}`, // Pass the token in the Authorization header
         },
